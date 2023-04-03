@@ -1,3 +1,5 @@
 "use strict";
 // eslint-disable-next-line no-console
-console.log('Hello world!');
+var OUT_PUT = "Hello world!";
+var newOutput = OUT_PUT + 'Some new world';
+console.log(newOutput);
