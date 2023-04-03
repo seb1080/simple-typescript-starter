@@ -4,10 +4,20 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Debug TypeScript in Node.js",
+      "name": "Debug TypeScript files",
       "preLaunchTask": "npm: build",
       "program": "${workspaceFolder}/src/index.ts",
-      "protocol": "inspector",
+      "outFiles": ["${workspaceFolder}/build/**/*.js"],
+      "sourceMaps": true,
+      "smartStep": true,
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug TypeScript files (watch mode)",
+      "preLaunchTask": "npm: build",
+      "program": "${workspaceFolder}/src/index.ts",
       "outFiles": ["${workspaceFolder}/build/**/*.js"],
       "sourceMaps": true,
       "smartStep": true,
