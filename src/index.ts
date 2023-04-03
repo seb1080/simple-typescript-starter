@@ -5,4 +5,4 @@ const secondVariable = `Web Dev. env. is all good :)`;
 
 const array1 = ['value1', 'value2'];
 
-console.log(`${OUT_PUT}, ${secondVariable}`);
+console.log(`${OUT_PUT}, ${secondVariable} ${array1.join(' ')}`);
